@@ -1,0 +1,9 @@
+version: "3,9"
+services:
+	apache:
+		image: httpd:latest
+		container_name: my-app-www
+		ports:
+		- '80:80'
+		volumes:
+		- ./www:/usr/local/apache2/htdocs
